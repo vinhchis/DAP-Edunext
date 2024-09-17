@@ -1,4 +1,5 @@
 from services.user_service import UserService
+from models.user import User
 
 
 def main():
@@ -17,7 +18,7 @@ def main():
             if users:
                 print('list of users:')
                 for user in users:
-                    print('\t', user)
+                    print('\t', User(*user))
             else:
                 print('No users')
 

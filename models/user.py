@@ -4,5 +4,5 @@ class User:
         self.name = name
         self.email = email
 
-    def __repr__(self):
-        return f'{User}({self.id}, {self.name}, {self.email})'
+    def __str__(self):
+        return f'User(id={self.id:2d}|name={self.name:15}|email={self.email:20})'
